@@ -16,6 +16,7 @@ let userList = [];
 let now = new Date();
 let chatLog = [];
 ioS.on('connection',(user)=>{
+  console.log(user);
     user.join('matching...')
     userList.push(user.id);
     if(userList.length == 2){
