@@ -9,7 +9,7 @@ const ioS = new Server(server,{
     origin:"https://jjhs.vercel.app",
     //origin:"https://semicolon-site.vercel.app/chatpageurl",
     allowedHeaders: ["requestConnect"],
-    credentials: true
+    credentials: false
   }
 });
 let userList = [];
