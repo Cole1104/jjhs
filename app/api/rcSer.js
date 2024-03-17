@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const ioS = new Server(server,{
   cors:{
-    origin:"https://jjhs.vercel.app/",
+    origin:"https://jjhs.vercel.app",
     //origin:"https://semicolon-site.vercel.app/chatpageurl",
     allowedHeaders: ["requestConnect"],
     credentials: true
