@@ -10,7 +10,7 @@ const inter = Jua({ subsets: ['latin'] ,weight:'400'})
 import Router from "next/router";
 import Navi from "./Navi";
 
-export const ioC = io('https://378b-39-113-114-105.ngrok-free.app',{
+export const ioC = io('https://1348-39-113-114-105.ngrok-free.app',{
     autoConnect: false,
     withCredentials:true,
     extraHeaders:{

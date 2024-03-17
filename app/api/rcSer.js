@@ -7,8 +7,7 @@ const { Server } = require("socket.io");
 const ioS = new Server(server,{
   cors:{
     origin:"https://jjhs.vercel.app",
-    //origin:"https://semicolon-site.vercel.app/chatpageurl",
-    allowedHeaders: ["requestConnect"],
+    
     credentials: true
   }
 });
@@ -16,7 +15,7 @@ let userList = [];
 let now = new Date();
 let chatLog = [];
 ioS.on('connection',(user)=>{
-  console.log(user);
+  
     user.join('matching...')
     userList.push(user.id);
     if(userList.length == 2){
