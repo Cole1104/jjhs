@@ -4,7 +4,7 @@ const nextConfig = {async headers() {
       {
         // matching all API routes
         
-        source:"*",
+        source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "https://jjhs.vercel.app" },
